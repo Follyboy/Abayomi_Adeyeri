@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You're Invited! Celebrate Abayomi’s 57th Birthday</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+
+    <meta property="og:title" content="You're Invited! Abayomi's 57th Birthday Celebration">
+    <meta property="og:description" content="Join us for a joyful evening celebrating Abayomi Adeyeri’s birthday on October 27th!">
+    <meta property="og:image" content="img/abayomi_sit.jpg"> <!-- Replace with a good quality image URL for the thumbnail -->
+    <meta property="og:url" content="YOUR_WEBSITE_LIVE_URL_HERE"> <!-- Replace with the actual live URL of your website -->
+    <meta property="og:type" content="website">
+
+  <!-- Chosen Palette: Warm Neutrals -->
+    <!-- Application Structure Plan: The application is designed as a single-page, top-down narrative. It starts with a bold hero section featuring the user's image as a background to announce the event, followed by a clear, icon-driven details section for scannability. A new dedicated photo gallery section is added within the body with two family photos for visual personalization. A dedicated location section with a "Get Directions" call-to-action simplifies travel planning. The final, prominent RSVP section drives the primary user action. This linear, task-oriented flow was chosen to guide the user effortlessly from awareness to action, making it more engaging and effective than a plain text invitation. -->
+    <!-- Visualization & Content Choices: Report Info: Event Details -> Goal: Inform & Excite -> Viz/Presentation: A single-page layout with thematic sections (Hero, Details, Photo Gallery, Location, RSVP) using elegant typography and icons (Unicode characters) for clarity. The header now features a background image (user's photo) with an overlay for text readability. A new photo gallery section with two family images has been added to the body. -> Interaction: Key interactions are the 'Get Directions' button (links to Google Maps) and the 'RSVP Now' button (links to the Google Form), providing direct utility to the user. -> Justification: This structure transforms static information into an intuitive and actionable user experience, with added personal visual appeal. -> Library/Method: HTML, Tailwind CSS. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #ffffff, #f9fafb);
+        }
+        .hero-background {
+            /* Placeholder for your image */
+            background-image: url('img/abayomi.jpg');
+        }
+    </style>
+</head>
+<body class="bg-amber-50 text-stone-800 antialiased">
+
+    <main class="container mx-auto max-w-4xl p-4 sm:p-8">
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+
+            <header class="text-center relative py-16 sm:py-24 md:py-32 hero-background bg-cover bg-center rounded-t-3xl">
+                <div class="absolute inset-0 bg-black opacity-40 rounded-t-3xl"></div>
+                <div class="relative z-10 text-white p-4">
+                    <h2 class="font-playfair text-lg sm:text-xl tracking-widest">YOU'RE INVITED TO CELEBRATE</h2>
+                    <h1 class="font-playfair text-5xl sm:text-7xl md:text-8xl font-bold mt-2">Abayomi’s 57th!</h1>
+                    <p class="mt-6 max-w-2xl mx-auto text-base sm:text-lg">
+                        Join us for a joyful evening filled with fun, laughter, and cherished company as we celebrate Abayomi Adeyeri’s birthday.
+                    </p>
+                </div>
+            </header>
+
+            <div class="p-8 sm:p-10">
+                <section id="details" class="mb-10">
+                    <h3 class="font-playfair text-3xl text-center text-orange-800 mb-8">Event Details</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div class="card-gradient p-6 rounded-2xl shadow-sm border border-stone-200">
+                            <div class="text-4xl mb-3">🗓️</div>
+                            <h4 class="text-xl font-bold text-stone-700">Date</h4>
+                            <p class="text-stone-600 mt-1">Monday, October 27th</p>
+                        </div>
+                        <div class="card-gradient p-6 rounded-2xl shadow-sm border border-stone-200">
+                            <div class="text-4xl mb-3">⏰</div>
+                            <h4 class="text-xl font-bold text-stone-700">Time</h4>
+                            <p class="text-stone-600 mt-1">6:00 PM - 8:30 PM</p>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=11051+N+Black+Cyn+Hwy,+Phoenix,+AZ+85029" target="_blank" rel="noopener noreferrer">
+                          <div class="card-gradient p-6 rounded-2xl shadow-sm border border-stone-200">
+                              <div class="text-4xl mb-3">📍</div>
+                              <h4 class="text-xl font-bold text-stone-700">Location</h4>
+                              <p class="text-stone-600 mt-1">11051 N Black Cyn Hwy,<br>Phoenix, AZ 85029</p>
+                          </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="rsvp" class="text-center mb-10">
+                    <div class="bg-orange-600 text-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="font-playfair text-3xl font-bold mb-2">Kindly RSVP</h3>
+                        <p class="mb-6">Please let us know if you can make it by <b>October 20th</b> so we can finalize the arrangements!</p>
+                        <a href="https://forms.gle/FmF9vajuNuYnsMWe7" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-orange-600 font-bold py-4 px-10 rounded-full hover:bg-amber-50 transition-transform duration-300 hover:scale-105 shadow-md">
+                            RSVP Now
+                        </a>
+                    </div>
+                </section>
+
+                <section id="photos" class="mb-10">
+                    <h3 class="font-playfair text-3xl text-center text-orange-800 mb-8">Cherished Moment</h3>
+                    <div class="flex justify-center">
+                        <div class="card-gradient p-3 rounded-2xl shadow-sm border border-stone-200 flex flex-col items-center max-w-lg w-full">
+                            <img src="img/abayomi_wife.jpg" alt="Family Photo" class="rounded-xl w-full h-auto object-cover mb-2">
+                            <p class="text-sm text-stone-600 text-center">Abayomi and his lovely wife</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="location" class="text-center mb-10">
+                     <div class="bg-stone-100 p-8 rounded-2xl">
+                        <h3 class="font-playfair text-3xl text-orange-800 mb-4">How to Get There</h3>
+                        <p class="text-stone-600 mb-6 max-w-lg mx-auto">The celebration will be held at Pappadeaux Seafood Kitchen. We've made it easy for you to find your way.</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=11051+N+Black+Cyn+Hwy,+Phoenix,+AZ+85029" target="_blank" rel="noopener noreferrer" class="inline-block bg-stone-800 text-white font-bold py-3 px-8 rounded-full hover:bg-stone-700 transition-colors duration-300 shadow-md">
+                            Get Directions
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="text-center p-6 bg-stone-100">
+                <p class="text-stone-500">We can't wait to celebrate with you!</p>
+            </footer>
+        </div>
+    </main>
+
+</body>
+</html>
